@@ -1,0 +1,27 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.biofactura.com/pricing-tables/
+sources:
+- https://www.biofactura.com/pricing-tables/
+name: BioFactura pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: BASIC PACKAGE
+  price_text: $19
+  price: 19
+  billing_period: yearly
+- name: PRO PACKAGE
+  price_text: 49$
+  price: 49
+  billing_period: yearly
+- name: START PACKAGE
+  price_text: 49$
+  price: 49
+  billing_period: yearly
+- name: DEVELOPER PACKAGE
+  price_text: $109
+  price: 109
+  billing_period: monthly
+docs: https://www.biofactura.com/pricing-tables/

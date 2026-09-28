@@ -1,23 +1,68 @@
 aid: biofactura
+
 name: BioFactura
-description: 'BioFactura is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: "BioFactura is a biosimilar and biodefense biomanufacturing company developing high‑value biosimilars, biodefense medical countermeasures, and client‑selected novel drugs. It operates through its Capitol Biologics CDMO division and focuses on accelerating biologics development from concept to clinic. The company provides platforms, pipeline products, and services for the biotech industry."
+
 url: https://raw.githubusercontent.com/api-evangelist/biofactura/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Biosimilars
+- Biodefense
+- Biomanufacturing
+- CDMO
+- Biotechnology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/biofactura-plans-pricing.yml
+- type: Hosts
+  url: hosts/biofactura-hosts.yml
+- type: Pricing
+  url: https://www.biofactura.com/pricing-tables/
+- type: Newsroom
+  url: https://www.biofactura.com/media/
+- type: Leadership
+  url: https://www.biofactura.com/company/management/
+- type: Blog
+  url: https://www.biofactura.com/blog/
+- type: DomainSecurity
+  url: security/biofactura-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.biofactura.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: "BioFactura's website provides no developer program or API documentation pages."
+  evidence:
+    - url: https://www.biofactura.com/pricing-tables/
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
